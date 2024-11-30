@@ -82,4 +82,29 @@ async function transcribeVideo() {
         transcriptionOutput.textContent = "An error occurred during transcription.";
         console.error(error);
     }
+    /* Navigation Link Styling */
+.navigation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.navigate-link {
+    display: inline-block;
+    background-color: #007bff; /* Blue theme color */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navigate-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
 }
