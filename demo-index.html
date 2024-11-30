@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Demo - AI Captioning and Transcription Tool</title>
+    <link rel="stylesheet" href="demo-page-styles.css">
+    <!-- Add Tidio Chatbot Script -->
+    <script src="//code.tidio.co/rhaqeklijexeqcdhbrbarnvgtxqnsiqe.js" async></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Demo - AI Tools</h1>
+        <p>Explore all the tools in action: Text to Audio, Audio to Text, Image to Text, and Live Audio Translation.</p>
+    </header>
+
+    <main>
+        <!-- Text to Audio Demo -->
+        <section class="demo" id="text-to-audio">
+            <h2>Text to Audio</h2>
+            <textarea id="text-input" placeholder="Enter text to convert to speech..." rows="5"></textarea>
+            <button id="convert-text-to-audio">Convert to Audio</button>
+            <audio id="audio-player" controls></audio>
+        </section>
+
+        <!-- Audio to Text Demo -->
+        <section class="demo" id="audio-to-text">
+            <h2>Audio to Text</h2>
+            <button id="start-recording">Start Recording</button>
+            <button id="stop-recording" disabled>Stop Recording</button>
+            <p id="audio-to-text-result"></p>
+        </section>
+
+        <!-- Image to Text Demo -->
+        <section class="demo" id="image-to-text">
+            <h2>Image to Text</h2>
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="extract-text-from-image">Extract Text</button>
+            <p id="image-text-result"></p>
+        </section>
+
+        <!-- Live Audio Translation Demo -->
+        <section class="demo" id="live-audio-translation">
+            <h2>Live Audio Translation</h2>
+            <button id="start-live-recording">Start Live Recording</button>
+            <button id="stop-live-recording" disabled>Stop Live Recording</button>
+            <p id="live-audio-translation-result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <button onclick="navigate('index.html')">Back to Home</button>
+    </footer>
+
+    <script src="demo-page-scripts.js"></script>
+</body>
+</html>
