@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Captioning and Transcription Tool</title>
+    <title>AI Video to Text Transcription</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-    <body>
+<body>
     <div class="container">
-        <header>
-            <h1>Elite Titans</h1>
-            <h2>AI Captioning & Transcription Tool</h2>
-        </header>
-        <main>
-            <p>
-                Build an AI-powered tool for real-time captioning and transcription of video/audio content. 
-                Use Copilot for speech recognition and language processing.
-            </p>
-            <button id="home-button">Navigate to Home Page</button>
-        </main>
+        <h1>AI Video to Text Transcription Tool</h1>
+        <div class="upload-section">
+            <label for="video-file">Upload Video File:</label>
+            <input type="file" id="video-file" accept="video/*">
+        </div>
+        <div class="player-section">
+            <video id="video-player" controls></video>
+        </div>
+        <button id="transcribe-btn">Transcribe</button>
+        <div id="transcription">
+            <h2>Transcription:</h2>
+            <p id="transcription-output">No transcription available yet.</p>
+        </div>
     </div>
     <script src="script.js"></script>
-        <script src="//code.tidio.co/rhaqeklijexeqcdhbrbarnvgtxqnsiqe.js" async></script>
 </body>
 </html>
