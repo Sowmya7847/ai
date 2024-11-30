@@ -164,26 +164,4 @@ footer .back-button:hover {
     .intro h3 {
         font-size: 1.5rem;
     }
-    /* Demo Button Style */
-.demo-btn {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 18px;
-  color: #fff;
-  background-color: #007bff; /* Blue color */
-  padding: 12px 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-
-.demo-btn:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-  transform: scale(1.05);
-}
-
-.demo-btn:active {
-  transform: scale(1);
-}
-
 }
